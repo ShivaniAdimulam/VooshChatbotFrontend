@@ -1,0 +1,16 @@
+* { box-sizing: border-box; }
+body, html, #root { height: 100%; margin: 0; font-family: system-ui, Arial; }
+.app { display:flex; flex-direction:column; align-items:center; padding:24px; min-height:100vh; background:#f7f7f8; }
+.header { margin-bottom:12px; }
+.chat { width:720px; max-width:95%; background:#fff; border-radius:12px; box-shadow: 0 6px 20px rgba(0,0,0,0.06); overflow:hidden; display:flex; flex-direction:column; }
+.messages { padding:20px; min-height:320px; max-height:60vh; overflow:auto; display:flex; flex-direction:column; gap:10px; }
+.bubble { padding:12px 14px; border-radius:12px; max-width:80%; }
+.bubble.user { align-self:flex-end; background:#e6fffa; color:#002b2b; }
+.bubble.assistant { align-self:flex-start; background:#f1f1f5; color:#111; }
+.composer { display:flex; gap:8px; padding:12px; align-items:center; border-top:1px solid #eee; }
+.composer input { flex:1; padding:10px 12px; border-radius:8px; border:1px solid #ddd; }
+.buttons { display:flex; gap:8px; }
+button { padding:8px 12px; border-radius:8px; border:none; background:#2563eb; color:white; cursor:pointer; }
+button:disabled { opacity:0.6; cursor:not-allowed; }
+button.reset { background:#ddd; color:#222; }
+.footer { margin-top:10px; color:#666; font-size:12px; }
