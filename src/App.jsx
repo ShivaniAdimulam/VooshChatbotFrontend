@@ -3,7 +3,7 @@ import axios from "axios";
 import { v4 as uuidv4 } from "uuid";
 import { FaSyncAlt } from "react-icons/fa";
 
-const API_BASE = "http://localhost:3000/api";
+const API_BASE ="https://vooshchatbot.onrender.com/api"                                //"http://localhost:3000/api";
 
 function ChatBubble({ role, text }) {
   return <div className={`bubble ${role}`}>{text}</div>;
